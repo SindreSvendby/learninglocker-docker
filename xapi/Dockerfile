@@ -6,7 +6,7 @@ ARG VERSION
 RUN mkdir /app
 
 # Download release and extract it in /app
-RUN cd /tmp && curl --compressed -L -o "xapi-service-${VERSION}.tar.gz" "https://github.com/LearningLocker/xapi-service/archive/${VERSION}.tar.gz" \
+RUN cd /tmp && curl --compressed -L -o "xapi-service-${VERSION}.tar.gz" "https://github.com/sindresvendby/xapi-service/archive/${VERSION}.tar.gz" \
     && tar -xzf "xapi-service-${VERSION}.tar.gz" -C /app --strip-components 1 \
     && rm xapi-service-*.tar.gz
 
